@@ -12,12 +12,10 @@ Note: Since the columns have set nullable = true, using printSchema() to see the
 
 The following columns that have been transformed:
 1. trans_data_trans_time (Transaction Time):
-This data was originally in YYYY-MM-DD HH:MM:SS format and have converted to UTC+8 and YYYY-MM-DD HH:MM.SSSSSSZ.
-format.
+This data was originally in YYYY-MM-DD HH:MM:SS format and have converted to UTC+8 and YYYY-MM-DD HH:MM.SSSSSSZ format.
 
 2.merch_last_update_time (Merchant Last Update Time):
 This data was originally in Milliseconds Unix and have converted to to UTC+8 and YYYY-MM-DD HH:MM.SSSSSSZ format. Need to divide by 1000 to convert it into seconds. Varies of timestamp length 12 or 13 digit due to precise in timestamp).
-format.
 
 3.merch_eff_time (Merchant Effective Registration Time)
 This data was originally in Milliseconds Unix and have converted to to UTC+8 and YYYY-MM-DD HH:MM.SSSSSSZ format. Need to divide by 1000 to convert it into seconds. Varies of timestamp length 15 or 16 digit due to precise in timestamp).
@@ -26,17 +24,17 @@ This data was originally in Milliseconds Unix and have converted to to UTC+8 and
 For this column, have identified where there are data with non-alphabetic characters, repeated commas and spaces.
 The conversion includes removed those mention above and using comma as the delimiter separating first and last names.
 
-5.First - First name of the Credit Card Owner identified as PII data and have using masking to handle its the sensitive data.
+5.First - First name of the Credit Card Owner identified as PII data and have using masking to handle the sensitive data.
 
-6.Last  - Last name of the Credit Card Owner identified as PII data and have using masking to handle its the sensitive data.
+6.Last  - Last name of the Credit Card Owner identified as PII data and have using masking to handle the sensitive data.
 
-7.street - Credit Card Owner's Street Address identified as PII data and have using masking to handle its the sensitive data.
+7.street - Credit Card Owner's Street Address identified as PII data and have using masking to handle the sensitive data.
 
-8.zip - Credit Card Owner's Zip Code identified as PII data and have using masking to handle its the sensitive data.
+8.zip - Credit Card Owner's Zip Code identified as PII data and have using masking to handle the sensitive data.
 
-9.dob = Credit Card Owner's Date of Birth identified as PII data and have using masking to handle its the sensitive data.
+9.dob = Credit Card Owner's Date of Birth identified as PII data and have using masking to handle the sensitive data.
 
-10.cc_num - Credit Card Number identified as PII data and have using hashing to handle its the sensitive data.
+10.cc_num - Credit Card Number identified as PII data and have using hashing to handle the sensitive data.
 
 11.merchant (Merchant Name):
 This data has "fraud_" in front of the data and have been removed in order to make it readable for visualisation.
