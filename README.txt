@@ -59,6 +59,6 @@ of transactions (fraud vs non-fraud).
 -Chart is displayed title, axis labels and categories.
 
 4. Transaction by Gender
--By using the gender. the pie chart will visually display the distribution of transactions across different genders. Each wedge in the pie chart will represent one gender and will show the percentage of the total transaction count, which corresponds to the count of each gender.
+-By using the gender column, the pie chart will visually display the distribution of transactions across different genders. Each wedge in the pie chart will represent one gender and will show the percentage of the total transaction count, which corresponds to the count of each gender.
 -The chart will have a title followed by labels will display the gender categories (eg: M,F).
  
